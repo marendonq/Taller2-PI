@@ -1,1 +1,55 @@
+# Entorno virtual
+venv/
+.env/
+env/
+*.env
+
+# Archivos de configuración de entorno
+*.env
+*.DS_Store
+
+# Archivos de compilación de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django
+db.sqlite3
+db.sqlite3-journal
+
+# Archivos estáticos y de media
+staticfiles/
+media/
+
+# Archivos de migración
+**/migrations/*.pyc
+**/migrations/*.py, except __init__.py
+
+# Archivos de log y otros archivos temporales
+*.log
+*.pot
 *.pyc
+*.so
+*.egg
+*.egg-info
+dist/
+build/
+*.mo
+
+# Librerías y dependencias instaladas
+*.egg-info/
+pip-wheel-metadata/
+*.py[co]
+*.sqlite3
+__pycache__/
+*.log
+*.pot
+local_settings.py
+
+# Configuración de IDEs
+.idea/
+.vscode/
+__pycache__/
+
+# Otros archivos generados
+*.~

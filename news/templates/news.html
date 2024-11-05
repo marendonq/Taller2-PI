@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container mt-5">
+    {% for news in newss %}
+    <div class="card mb-3">
+        <div class="row g-0">
+        <div class="col-md-4">
+            <!-- Imagen de la tarjeta (reemplaza el src con la ruta de tu imagen) -->
+            <img src="{{ news.image.url }}" class="img-fluid rounded-start" alt="news image">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+            <h5 class="card-title">{{ news.headline }}</h5>
+            <p class="card-text">{{ news.body }}</p>
+            <p class="card-text">
+                <small class="text-muted">{{ news.date }}</small>
+            </p>
+            </div>
+        </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock content %}
